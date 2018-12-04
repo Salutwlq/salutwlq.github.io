@@ -187,16 +187,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
@@ -210,19 +200,9 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
           </a>
         </li>
       
@@ -233,36 +213,6 @@
               <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
             
             日程表
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
-            
-            站点地图
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
-            
-            公益404
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-something">
-          <a href="/something" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-cab"></i> <br>
-            
-            有料
           </a>
         </li>
       
@@ -341,6 +291,39 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作/" itemprop="url" rel="index">
+                    <span itemprop="name">工作</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -370,13 +353,18 @@
       
         
           
-            <h4 id="参考文档："><a href="#参考文档：" class="headerlink" title="参考文档："></a>参考文档：</h4><ul>
+            <h2 id="实用性操作"><a href="#实用性操作" class="headerlink" title="实用性操作"></a>实用性操作</h2><h3 id="命令操作"><a href="#命令操作" class="headerlink" title="命令操作"></a>命令操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean          //清理文件</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s --debug     //本地启动hexo服务</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy        //部署服务到github</span><br></pre></td></tr></table></figure>
+<h3 id="文本编写具体参考markdown语法"><a href="#文本编写具体参考markdown语法" class="headerlink" title="文本编写具体参考markdown语法"></a>文本编写具体参考markdown语法</h3><a href="https://www.appinn.com/markdown/index.html" target="_blank" rel="noopener">markdown语法</a>
+<h4 id="具体参考文档："><a href="#具体参考文档：" class="headerlink" title="具体参考文档："></a>具体参考文档：</h4><ul>
 <li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a></li>
 <li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT使用文档</a>
 </li>
 </ul>
-<h5 id="解决NPM国内下载速度慢问题："><a href="#解决NPM国内下载速度慢问题：" class="headerlink" title="解决NPM国内下载速度慢问题："></a>解决NPM国内下载速度慢问题：</h5><a href="http://npm.taobao.org/" target="_blank" rel="noopener">切换淘宝NPM镜像</a>
-<h5 id="部署前运行"><a href="#部署前运行" class="headerlink" title="部署前运行"></a>部署前运行</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="解决NPM国内下载速度慢问题："><a href="#解决NPM国内下载速度慢问题：" class="headerlink" title="解决NPM国内下载速度慢问题："></a>解决NPM国内下载速度慢问题：</h3><a href="http://npm.taobao.org/" target="_blank" rel="noopener">切换淘宝NPM镜像</a>
+<h3 id="部署前运行"><a href="#部署前运行" class="headerlink" title="部署前运行"></a>部署前运行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="支持的图标字体库"><a href="#支持的图标字体库" class="headerlink" title="支持的图标字体库"></a>支持的图标字体库</h3><a href="http://fontawesome.dashgame.com/" target="_blank" rel="noopener">FontAwesome</a>
 
           
         
@@ -593,13 +581,47 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Salutwlq" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lqw2868968049@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
