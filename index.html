@@ -268,7 +268,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/15/springboot环境配置/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2018/12/15/springboot环境配置/" itemprop="url">springboot环境配置</a></h1>
         
 
         <div class="post-meta">
@@ -290,6 +290,39 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作/" itemprop="url" rel="index">
+                    <span itemprop="name">工作</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作/SpringBoot/" itemprop="url" rel="index">
+                    <span itemprop="name">SpringBoot</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -320,22 +353,11 @@
       
         
           
-            <hr>
-<p>title: springboot环境配置<br>date: 2018-12-15 21:12:46<br>categories:</p>
-<ul>
-<li>工作</li>
-<li>SpringBoot<br>tags:</li>
-<li>工作</li>
-<li>SpringBoot</li>
-<li>SpringBoot配置</li>
-</ul>
-<p>#环境约束<br>-jdk1.8<br>-maven3.x<br>-SpringBoot1.5.9</p>
-<p>###1、maven配置(conf/settings.xml)：</p>
-<p>####1、maven修改默认仓库<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;D:/Program Files/maven/repo&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure></p>
-<p>####2、修改国内阿里云映像 (mirrors标签)<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">    &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">    &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">    &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">    &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;        </span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure></p>
-<p>####3、配置jdk版本(profiles标签)<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;profile&gt;</span><br><span class="line">      &lt;id&gt;jdk-1.8&lt;/id&gt;</span><br><span class="line">      &lt;activation&gt;</span><br><span class="line">		      &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;</span><br><span class="line">          &lt;jdk&gt;1.8&lt;/jdk&gt;</span><br><span class="line">      &lt;/activation&gt;</span><br><span class="line">      &lt;properties&gt;</span><br><span class="line">          &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">          &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">          &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;</span><br><span class="line">      &lt;/properties&gt;</span><br><span class="line">&lt;/profile&gt;</span><br></pre></td></tr></table></figure></p>
-<p>###2、IDEA设置</p>
-<p><img src="../images/Snipaste_2018-12-15_22-00-50.png" alt="IDEA配置"></p>
+            <h1 id="环境约束"><a href="#环境约束" class="headerlink" title="环境约束"></a>环境约束</h1><p>-jdk1.8<br>-maven3.x<br>-SpringBoot1.5.9</p>
+<h3 id="1、maven配置-conf-settings-xml-："><a href="#1、maven配置-conf-settings-xml-：" class="headerlink" title="1、maven配置(conf/settings.xml)："></a>1、maven配置(conf/settings.xml)：</h3><h4 id="1、maven修改默认仓库"><a href="#1、maven修改默认仓库" class="headerlink" title="1、maven修改默认仓库"></a>1、maven修改默认仓库</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;D:/Program Files/maven/repo&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="2、修改国内阿里云映像-mirrors标签"><a href="#2、修改国内阿里云映像-mirrors标签" class="headerlink" title="2、修改国内阿里云映像 (mirrors标签)"></a>2、修改国内阿里云映像 (mirrors标签)</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">    &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">    &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">    &lt;url&gt;http:<span class="comment">//maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span></span><br><span class="line">    &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;        </span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3、配置jdk版本-profiles标签"><a href="#3、配置jdk版本-profiles标签" class="headerlink" title="3、配置jdk版本(profiles标签)"></a>3、配置jdk版本(profiles标签)</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;profile&gt;</span><br><span class="line">      &lt;id&gt;jdk-1.8&lt;/id&gt;</span><br><span class="line">      &lt;activation&gt;</span><br><span class="line">		      &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;</span><br><span class="line">          &lt;jdk&gt;1.8&lt;/jdk&gt;</span><br><span class="line">      &lt;/activation&gt;</span><br><span class="line">      &lt;properties&gt;</span><br><span class="line">          &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">          &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">          &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;</span><br><span class="line">      &lt;/properties&gt;</span><br><span class="line">&lt;/profile&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2、IDEA设置"><a href="#2、IDEA设置" class="headerlink" title="2、IDEA设置"></a>2、IDEA设置</h3><p><img src="../images/Snipaste_2018-12-15_22-00-50.png" alt="IDEA配置"></p>
 
           
         
@@ -846,7 +868,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -857,7 +879,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
